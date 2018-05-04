@@ -5,10 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>翼教育 - 教学系统</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link href="css/googleapi.css" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
         <style>
@@ -78,16 +78,15 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+                <div class="title m-b-md">翼教育 - 教学系统</div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="{{ route('grades.index') }}">首页</a>
+                    <a href="{{ route('courses.index') }}">色带列表</a>
+                    <a href="{{ route('courses.show', ['id' => 1]) }}">色带详情</a>
+                    <a href="{{ route('teachings.index') }}">课时列表</a>
+                    <a href="{{ route('teachings.show', ['id' => 1]) }}">课时教学</a>
+                    <a href="{{ route('grades.index') }}">登录/注册</a>
                 </div>
             </div>
         </div>

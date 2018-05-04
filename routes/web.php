@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//班级
+Route::resource('grades', 'GradesController');
+//课程
+Route::resource('courses', 'CoursesController');
+//课时
+Route::resource('teachings', 'TeachingsController');
