@@ -149,7 +149,12 @@ return $results;
      */
     public function show($id)
     {
-        return $this->repository->detail($id);
+        $item = $this->repository->detail($id);
+        
+        return view($this->route . '.detail', [
+            'route' => $this->route,
+            'item' => $item
+        ]);
     }
     
     public function response($response)

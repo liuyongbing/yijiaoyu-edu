@@ -2,10 +2,10 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/css/bootstrap.css" />
-    <link rel="stylesheet" href="/css/css.css" />
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/css.css" />
     <title>齐天大圣</title>
 </head>
 <body class="body-bg02">
@@ -20,12 +20,22 @@
 			
 			<div id="carousel-generic" class="carousel slide" data-ride="">
                 <div class="carousel-inner">
-                    @foreach($items as $key => $item)
-                    <div class="item @if(0 === $key) active @endif">
-                        <label>{{ $item['title'] }}</label>
-                        <img src="{{ $item['image_url'] }}">
+                    <div class="item active">
+                        <label>1课时</label>
+                        <img src="images/default-img.jpg">
                     </div>
-                    @endforeach
+                    <div class="item">
+                        <label>2课时</label>
+                        <img src="images/default-img.jpg">
+                    </div>
+                    <div class="item">
+                        <label>3课时</label>
+                        <img src="images/default-img.jpg">
+                    </div>
+                    <div class="item">
+                        <label>4课时</label>
+                        <img src="images/default-img.jpg">
+                    </div>
                 </div>
                 <a class="left carousel-control" href="#carousel-generic" data-slide="prev">
                     <span class="fa fa-angle-left"></span>
@@ -44,7 +54,7 @@
 
 <script>
 	
-	$(document).keydown(function(event){
+	$(document).keydown(function(){
 			if (event.keyCode==37){
 				console.info("左")
 				$('#carousel-generic').carousel('prev')

@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Repositories\CoursesRepository;
 use App\Repositories\TeachingsRepository;
 use Illuminate\Http\Request;
 
@@ -15,71 +14,20 @@ class TeachingsController extends Controller
         $this->route = 'teachings';
     }
     
-    /**
-     * 修改 view
-     * 
-     * @param int $id
-     */
-    public function edit($id)
+    public function index(Request $request)
     {
-        $item = $this->repository->detail($id);
+        $courseId = $request->input('course_id');
+        $classNumber = $request->input('class_number');
         
-        $repository = new CoursesRepository();
-        $grades = $repository->all();
-        
-        return view($this->route . '.edit', [
+        $params = [
+            'course_id' => $courseId,
+            'class_number' => $classNumber,
+        ];
+        $results = $this->repository->all($params, 'sort');
+//echo '<pre>';print_r($results);exit();
+        return view($this->route . '.list', [
             'route' => $this->route,
-            'item' => $item,
-            'grades' => $grades['list']
+            'items' => isset($results['list']) ? $results['list'] : []
         ]);
-    }
-    
-    /**
-     * 修改 put
-     * 
-     * @param Request $request
-     * @param int $id
-     */
-    public function update(Request $request, $id)
-    {
-        $data = $request->input('Record');
-        $data['image'] = $this->upload($request);
-        
-        $response = $this->repository->update($id, $data);
-
-        return redirect()->route($this->route . '.index');
-    }
-    
-    /**
-     * 新增
-     * 
-     * @param Request $request
-     */
-    public function create(Request $request)
-    {
-        $repository = new CoursesRepository();
-        $grades = $repository->all();
-        return view($this->route . '.add', [
-            'route' => $this->route,
-            'item' => [
-                'status' => 1
-            ],
-            'grades' => $grades['list']
-        ]);
-    }
-    
-    /**
-     * 新增 post
-     * 
-     * @param Request $request
-     */
-    public function store(Request $request)
-    {
-        $data = $request->input('Record');
-        $data['image'] = $this->upload($request);
-        
-        $response = $this->repository->store($data);
-        
-        return redirect()->route($this->route . '.index');
     }
 }
