@@ -1,17 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
-    <link rel="stylesheet" href="/css/css.css" />
-    <title>齐天大圣</title>
-</head>
+@extends('layouts.main')
+
+@section('title', '课时列表')
+
+@section('body')
 <body class="body-bg02">
 
 <div class="stage-detail">
-	
-	<div class="center prel">
-			
+
+    <div class="center prel">
+    
         <div class="step">
             <a href="javascript:void(0);"> < 首页</a>
             <a href="javascript:void(0);"> < 入门活动卡</a>
@@ -42,10 +39,7 @@
                 
             </div>
         </div>
-	</div>
-	
+    </div>
+
 </div>
-
-</body>
-
-</html>
+@endsection

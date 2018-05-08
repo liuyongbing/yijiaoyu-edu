@@ -41,17 +41,10 @@ class Controller extends BaseController
         $size = Dictionary::PAGE_SIZE;
         
         $results = $this->repository->list([], $page, $size);
-return $results;
+        
         return view($this->route . '.list', [
             'route' => $this->route,
-            'items'         => isset($results['list']) ? $results['list'] : [],
-            'filters'       => [],
-            'pagination' => [
-                'route' => $this->route . '.index',
-                'page' => $page,
-                'size' => $size,
-                'total' => isset($results['total']) ? $results['total'] : 0
-            ]
+            'items'         => isset($results['list']) ? $results['list'] : []
         ]);
     }
     
