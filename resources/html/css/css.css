@@ -57,19 +57,13 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
 /*阶段*/
 .body-bg{background:url(../images/jd-bg.jpg) top center no-repeat #152f44;}
 .stage .center{width:838px;}
-.stage .logo{  top:-160px; background:url(../images/slogo.png) center / 269px 94px no-repeat; width:269px; height:94px;}
+.stage .logo{/* top:-160px; */background:url(../images/slogo.png) center / 269px 94px no-repeat;width:269px;height:94px;}
 .stage-list{height:308px;margin-top:195px;}
-.stage-list a{ text-align:center; color:#fff; float:left; width:110px; margin-left:-25px; height:308px;}
-.stage-list a:nth-child(1){ padding-top:130px; background:url(../images/01.png) center bottom no-repeat; margin-left:-18px;}
-.stage-list a:nth-child(2){ padding-top:110px; background:url(../images/02.png) center bottom no-repeat; }
-.stage-list a:nth-child(3){ padding-top:95px; background:url(../images/03.png) center bottom no-repeat; }
-.stage-list a:nth-child(4){ padding-top:80px; background:url(../images/04.png) center bottom no-repeat; }
-.stage-list a:nth-child(5){ padding-top:65px; background:url(../images/05.png) center bottom no-repeat; }
-.stage-list a:nth-child(6){ padding-top:50px; background:url(../images/06.png) center bottom no-repeat; }
-.stage-list a:nth-child(7){ padding-top:35px; background:url(../images/07.png) center bottom no-repeat; }
-.stage-list a:nth-child(8){ padding-top:25px; background:url(../images/08.png) center bottom no-repeat; }
-.stage-list a:nth-child(9){ padding-top:15px; background:url(../images/09.png) center bottom no-repeat; }
-.stage-list a:nth-child(10){ background:url(../images/10.png) center bottom no-repeat; right:-20px; bottom:0; }
+.stage-list a{ position:relative; text-align:center; color:#fff; float:left; width:110px; margin-left:-25px; height:308px;}
+.stage-list a span{ cursor:pointer; position:absolute; bottom:0; left:0;}
+.stage-list a img{ cursor:pointer; -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0%, transparent) , to(rgba(250, 250, 250, 0.2)));}
+.stage-list a.a10{ position:absolute;}
+
 
 /*阶段详情*/
 .body-bg01{background:url(../images/jd-bg01.jpg) top center no-repeat #152f44;}
@@ -114,6 +108,13 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
 .stage-detail .logo{ margin:20px 0; background:url(../images/slogo.png) center / 269px 94px no-repeat; width:269px; height:94px;}
 .classdetail-center .carousel{ width:759px; height:570px; margin:0 auto;}
 .classdetail-center .item label{ width:100%; position:absolute; top:0; left:0; text-align:center; color:#fff; font-size:40px; font-weight:bold;}
+
+
+/*index-c*/
+.body-bg03{background:url(../images/jd-bg03.jpg) top center no-repeat #152f44;}
+.kp .center{width:1080px;}
+.kp .logo{ top:30px; background:url(../images/slogo.png) center / 269px 94px no-repeat;width:269px;height:94px;}
+.htmleaf-container{ margin-top:180px;}
   
   @-webkit-keyframes neon2 {
   from {
