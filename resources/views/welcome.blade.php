@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>翼教育 - 教学系统</title>
+        <title>翼教教育 - 教学系统</title>
 
         <!-- Fonts -->
         <link href="css/googleapi.css" rel="stylesheet" type="text/css">
@@ -86,7 +86,8 @@
                     <a href="{{ route('courses.show', ['id' => 1]) }}">色带详情</a>
                     <a href="{{ route('teachings.index') }}">课时列表</a>
                     <a href="{{ route('teachings.show', ['id' => 1]) }}">课时教学</a>
-                    <a href="{{ route('grades.index') }}">登录/注册</a>
+                    <a href="{{ route('login') }}">登录</a>
+                    <a href="{{ route('register') }}">注册</a>
                 </div>
             </div>
         </div>
