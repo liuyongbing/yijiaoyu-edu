@@ -20,6 +20,10 @@
                         <label>{{ $item['title'] }}</label>
                         <img src="{{ $item['image_url'] }}">
                     </div>
+                    <div class="item">
+                        <label>{{ $item['title'] }}</label>
+                        <span>文字文字文字</span>
+                    </div>
                     @endforeach
                 </div>
                 <a class="left carousel-control" href="#carousel-generic" data-slide="prev">

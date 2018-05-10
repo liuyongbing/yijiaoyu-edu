@@ -34,8 +34,10 @@ h2 {
                 @foreach($items as $item)
                     <li>
                         <label>{{ $item['title'] }}</label>
-                        <img src="{{ $item['image_url'] }}" >
-                        <img class="undis" src="{{ $item['image_url'] }}" >
+                        <a href="{{ route('courses.index', ['grade_id' => $item['id']]) }}">
+                            <img src="{{ $item['image_url'] }}" />
+                        </a>
+                        <img class="undis" src="{{ $item['image_url'] }}" />
                     </li>
                 @endforeach
                 </ul>

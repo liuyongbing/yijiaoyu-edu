@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Repositories\CoursesRepository;
+use Illuminate\Http\Request;
 
 class CoursesController extends Controller
 {
@@ -11,6 +12,24 @@ class CoursesController extends Controller
         $this->repository = new CoursesRepository();
         
         $this->route = 'courses';
+    }
+    
+    /**
+     * 列表
+     *
+     * @param Request $request
+     */
+    public function index(Request $request)
+    {
+        $params = [
+            'grade_id' => $request->input('grade_id', '')
+        ];
+        $results = $this->repository->all($params);
+//return $results;
+        return view($this->route . '.list', [
+            'route' => $this->route,
+            'items' => isset($results['list']) ? $results['list'] : []
+        ]);
     }
     
     /**
