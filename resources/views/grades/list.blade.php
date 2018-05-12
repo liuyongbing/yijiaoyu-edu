@@ -1,10 +1,9 @@
 @extends('layouts.main')
 
 @section('style')
-<link href="{{ asset(elixir('css/jquery.vm-carousel.css')) }}" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset(elixir('css/jquery.vm-carousel.css')) }}">
+    <link rel="stylesheet" href="{{ asset(elixir('css/bootstrap.css')) }}" />
+    <link rel="stylesheet" href="{{ asset(elixir('css/css.css')) }}" />
 
 <style type="text/css">
 h2 {
@@ -50,15 +49,18 @@ h2 {
 @endsection
 
 @section('script')
-<script type="text/javascript" src="{{ asset(elixir('js/jquery.vm-carousel.js')) }}"></script>
+<script type="text/javascript" src="{{ asset(elixir('js/jquery-3.2.1.min.js')) }}"></script>
+<script type="text/javascript" src="{{ asset(elixir('js/bootstrap.min.js')) }}"></script>
+<script src="{{ asset(elixir('js/modernizr.js')) }}"></script>
+<script src="{{ asset(elixir('js/jquery.vm-carousel.js')) }}"></script>
 <script type="text/javascript">
     jQuery(function($){
-        $('.vmcarousel-centered').vmcarousel({
-            centered: true,
-            start_item: 2,
-            autoplay: false,
-            infinite: false
-        });
-   });
+    $('.vmcarousel-centered').vmcarousel({
+             centered: true,
+             start_item: 2,
+             autoplay: false,
+             infinite: false
+          });
+       });
 </script>
 @endsection

@@ -5,15 +5,15 @@
 @section('body')
 <body class="body-bg02">
 
-<div class="stage-detail">
-    
-    <div class="center prel">
-        
-        <div class="logo"></div>
-        
-        <div class="classdetail-center">
-            
-            <div id="carousel-generic" class="carousel slide" data-ride="">
+<<div class="stage-detail">
+	
+	<div class="center prel">
+		
+		<div class="logo"></div>
+		
+		<div class="classdetail-center">
+			
+			<div id="carousel-generic" class="carousel slide" data-ride="">
                 <div class="carousel-inner">
                     @foreach($items as $key => $item)
                     <div class="item @if(0 === $key) active @endif">
@@ -22,7 +22,9 @@
                     </div>
                     <div class="item">
                         <label>{{ $item['title'] }}</label>
-                        <span>文字文字文字</span>
+                        <div class="txt">
+                        	<div class="txt-center">纯文字</div>
+                        </div>
                     </div>
                     @endforeach
                 </div>
@@ -33,10 +35,10 @@
                     <span class="fa fa-angle-right"></span>
                 </a>
             </div>
-        </div>
-        
-    </div>
-    
+		</div>
+		
+	</div>
+	
 </div>
 
 </body>
@@ -47,20 +49,18 @@
 $(document).keydown(function(event){
     if (event.keyCode==37){
         console.info("左")
-        $('#carousel-generic').carousel('prev')
     }
     
     if (event.keyCode==38){
-        console.info("上")
+        $('#carousel-generic').carousel('prev')
     }
     
     if (event.keyCode==39){
         console.info("右")
-        $('#carousel-generic').carousel('next')
     }
     
     if (event.keyCode==40){
-        console.info("下")
+        $('#carousel-generic').carousel('next')
     }
 });
 
