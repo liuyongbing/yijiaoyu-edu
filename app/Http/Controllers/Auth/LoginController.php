@@ -3,31 +3,32 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Repositories\AccountsRepository;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
     /*
-    |--------------------------------------------------------------------------
-    | Login Controller
-    |--------------------------------------------------------------------------
-    |
-    | This controller handles authenticating users for the application and
-    | redirecting them to your home screen. The controller uses a trait
-    | to conveniently provide its functionality to your applications.
-    |
-    */
-
+     |--------------------------------------------------------------------------
+     | Login Controller
+     |--------------------------------------------------------------------------
+     |
+     | This controller handles authenticating users for the application and
+     | redirecting them to your home screen. The controller uses a trait
+     | to conveniently provide its functionality to your applications.
+     |
+     */
+    
     use AuthenticatesUsers;
-
+    
     /**
      * Where to redirect users after login.
      *
      * @var string
      */
     protected $redirectTo = '/home';
-
+    
     /**
      * Create a new controller instance.
      *
@@ -37,18 +38,46 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
         
-        parent::init();
+        $this->init();
     }
     
-    public function form()
+    public function init()
     {
-        return view('login.form', [
-            'route' => $this->route
-        ]);
+        $this->repository = new AccountsRepository();
     }
     
-    public function code(Request $request)
+    public function form(){
+        return view('login.form');
+    }
+    
+    public function auth(Request $request)
     {
+        $data = $request->input('Login');
+        $data = [
+            'username' => $data['mobile'],
+            'code' => $data['code'],
+            'mac_token' => $data['mac_token'],
+        ];
+        $result = $this->repository->login($data);
         
+        if(!empty($result['id']) && !empty($result['account'])) {
+            $request->session()->put('id', $result['id']);
+            $request->session()->put('account', $result['account']);
+        } else {
+            return $result;
+        }
+        
+        return redirect()->route('dashboard');
+    }
+    
+    /**
+     * 注销
+     * @param Request $request
+     */
+    public function logout(Request $request)
+    {
+        $request->session()->flush();
+        
+        return redirect('login');
     }
 }

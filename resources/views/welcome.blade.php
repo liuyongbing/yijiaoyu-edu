@@ -72,7 +72,6 @@
                         <a href="{{ url('/home') }}">Home</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
                     @endauth
                 </div>
             @endif
@@ -87,7 +86,6 @@
                     <a href="{{ route('teachings.index') }}">课时列表</a>
                     <a href="{{ route('teachings.show', ['id' => 1]) }}">课时教学</a>
                     <a href="{{ route('login') }}">登录</a>
-                    <a href="{{ route('register') }}">注册</a>
                 </div>
             </div>
         </div>

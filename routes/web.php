@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 Route::group(['namespace' => 'Auth'], function () {
     Route::get('/login', 'LoginController@form')->name('login');
-    Route::post('/auth', 'LoginController@login')->name('auth');
+    Route::post('/login', 'LoginController@auth')->name('auth');
     Route::get('/logout', 'LoginController@logout')->name('logout');
 });
 //班级

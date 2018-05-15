@@ -24,7 +24,7 @@
                     <div class="pub-lp d01 ">
                         <form id="form_login" action="{{ route('auth') }}" method="post">
                             {{ csrf_field() }}
-                            <input name="Login[mac_token]" value="" type="hidden" />
+                            <input id="mac_token" name="Login[mac_token]" value="" type="hidden" />
                             <p><input type="text" id="mobile" name="Login[mobile]" placeholder="手机号" /></p>
                             <p class="code">
                                 <input name="Login[code]" placeholder="手机验证码" type="text" />
@@ -72,7 +72,6 @@
                 return false;
             }
             
-            
             var mobile = $('#mobile').val();
             if (!mobile) {
                 alert('请输入手机号');
@@ -94,6 +93,7 @@
         });
         
         $('a.post').click(function() {
+            $('#mac_token').val(getMac());
             $('#form_login').submit();
         });
         
