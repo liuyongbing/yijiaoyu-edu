@@ -67,7 +67,7 @@ class LoginController extends Controller
             return $result;
         }
         
-        return redirect()->route('dashboard');
+        return redirect()->route('grades.index');
     }
     
     /**

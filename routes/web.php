@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect(route('grades.index'));
 });
 Route::group(['namespace' => 'Auth'], function () {
     Route::get('/login', 'LoginController@form')->name('login');
@@ -27,4 +27,4 @@ Route::get('courses/{id}/class', 'CoursesController@class')->name('courses.class
 //课时
 Route::resource('teachings', 'TeachingsController');
 //短信
-Route::any('/sms/send', 'SmsController@send')->name('sms.send');
+Route::post('/sms/send', 'SmsController@send')->name('sms.send');
