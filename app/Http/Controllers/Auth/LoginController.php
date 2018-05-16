@@ -46,10 +46,18 @@ class LoginController extends Controller
         $this->repository = new AccountsRepository();
     }
     
-    public function form(){
+    /**
+     * 登录 View
+     */
+    public function form()
+    {
         return view('login.form');
     }
     
+    /**
+     * 登录 POST
+     * @param Request $request
+     */
     public function auth(Request $request)
     {
         $data = $request->input('Login');
@@ -60,10 +68,13 @@ class LoginController extends Controller
         ];
         $result = $this->repository->login($data);
         
-        if(!empty($result['id']) && !empty($result['account'])) {
+        if(!empty($result['id']) && !empty($result['account']))
+        {
             $request->session()->put('id', $result['id']);
             $request->session()->put('account', $result['account']);
-        } else {
+        }
+        else
+        {
             return $result;
         }
         
