@@ -14,7 +14,7 @@ class AccountsEndpoint extends Endpoints
     
     public function login($data)
     {
-        $response = ApiClient::post($this->api . '/login', $data);
+        $response = ApiClient::post($this->api . '/teacher/login', $data);
         
         return $this->response($response);
     }
