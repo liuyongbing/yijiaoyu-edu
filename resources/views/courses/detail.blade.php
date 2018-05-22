@@ -3,7 +3,7 @@
 @section('title', '课程简介')
 
 @section('style')
-    <link href="/css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+    <link href="{{ asset(elixir('css/jquery.mCustomScrollbar.css')) }}{{ $STATIC_VERSION }}" rel="stylesheet" />
 @endsection
     
 @section('body')

@@ -1,9 +1,9 @@
 @extends('layouts.main')
 
 @section('style')
-    <link rel="stylesheet" type="text/css" href="{{ asset(elixir('css/jquery.vm-carousel.css')) }}">
-    <link rel="stylesheet" href="{{ asset(elixir('css/bootstrap.css')) }}" />
-    <link rel="stylesheet" href="{{ asset(elixir('css/css.css')) }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset(elixir('css/jquery.vm-carousel.css')) }}{{ $STATIC_VERSION }}">
+    <link rel="stylesheet" href="{{ asset(elixir('css/bootstrap.css')) }}{{ $STATIC_VERSION }}" />
+    <link rel="stylesheet" href="{{ asset(elixir('css/css.css')) }}{{ $STATIC_VERSION }}" />
 
 <style type="text/css">
 h2 {
@@ -49,18 +49,18 @@ h2 {
 @endsection
 
 @section('script')
-<script type="text/javascript" src="{{ asset(elixir('js/jquery-3.2.1.min.js')) }}"></script>
-<script type="text/javascript" src="{{ asset(elixir('js/bootstrap.min.js')) }}"></script>
-<script src="{{ asset(elixir('js/modernizr.js')) }}"></script>
-<script src="{{ asset(elixir('js/jquery.vm-carousel.js')) }}"></script>
+<script type="text/javascript" src="{{ asset(elixir('js/jquery-3.2.1.min.js')) }}{{ $STATIC_VERSION }}"></script>
+<script type="text/javascript" src="{{ asset(elixir('js/bootstrap.min.js')) }}{{ $STATIC_VERSION }}"></script>
+<script type="text/javascript" src="{{ asset(elixir('js/modernizr.js')) }}{{ $STATIC_VERSION }}"></script>
+<script type="text/javascript" src="{{ asset(elixir('js/jquery.vm-carousel.js')) }}{{ $STATIC_VERSION }}"></script>
 <script type="text/javascript">
     jQuery(function($){
     $('.vmcarousel-centered').vmcarousel({
-             centered: true,
-             start_item: 2,
-             autoplay: false,
-             infinite: false
-          });
-       });
+            centered: true,
+            start_item: 2,
+            autoplay: false,
+            infinite: false
+        });
+    });
 </script>
 @endsection
