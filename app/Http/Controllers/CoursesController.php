@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Repositories\CoursesRepository;
+use App\Repositories\GradesRepository;
 use Illuminate\Http\Request;
 
 class CoursesController extends Controller
@@ -25,10 +26,35 @@ class CoursesController extends Controller
             'grade_id' => $request->input('grade_id', '')
         ];
         $results = $this->repository->all($params);
-//return $results;
+        
         return view($this->route . '.list', [
             'route' => $this->route,
             'items' => isset($results['list']) ? $results['list'] : []
+        ]);
+    }
+    
+    /**
+     * 查看
+     *
+     * @param int $id
+     */
+    public function show($id)
+    {
+        $item = $this->repository->detail($id);
+        
+        $params = [
+            'grade_id' => $item['grade_id']
+        ];
+        $courses = $this->repository->all($params);
+        
+        $repository = new GradesRepository();
+        $grade = $repository->detail($item['grade_id']);
+        
+        return view($this->route . '.detail', [
+            'route' => $this->route,
+            'item' => $item,
+            'grade' => $grade,
+            'courses' => !empty($courses['list']) ? $courses['list'] : [],
         ]);
     }
     
@@ -41,9 +67,19 @@ class CoursesController extends Controller
     {
         $item = $this->repository->detail($id);
         
+        $params = [
+            'grade_id' => $item['grade_id']
+        ];
+        $courses = $this->repository->all($params);
+        
+        $repository = new GradesRepository();
+        $grade = $repository->detail($item['grade_id']);
+        
         return view($this->route . '.class', [
             'route' => $this->route,
-            'item' => $item
+            'item' => $item,
+            'grade' => $grade,
+            'courses' => !empty($courses['list']) ? $courses['list'] : [],
         ]);
     }
 }
