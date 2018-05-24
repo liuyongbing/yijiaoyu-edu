@@ -61,6 +61,8 @@ class LoginController extends Controller
      */
     public function auth(Request $request)
     {
+        $response = ['status' => 'success'];
+        
         $data = $request->input('Login');
         $data = [
             'username' => $data['mobile'],
@@ -76,10 +78,9 @@ class LoginController extends Controller
         }
         else
         {
-            return $result;
+            $response = $result;
         }
-        
-        return redirect()->route('grades.index');
+        return $response;
     }
     
     /**
