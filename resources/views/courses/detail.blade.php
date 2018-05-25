@@ -17,19 +17,11 @@
             <a href="{{ route('courses.show', ['id' => $item['id']]) }}"> < {{ $item['title'] }}</a>
         </div>
         <div class="detail-center">
-            <div class="kp l"><span><img src="{{ $item['image_url'] }}" width="228" height="100%"></span></div>
+            <div class="kp l"><span><img src="{{ $item['image_url'] }}"></span></div>
             <div class="txt l">
                 <b>{{ $item['title'] }} - 课程简介</b>
                 <p>{{ $item['summary'] }}</p>
                 <a class="btn" href="{{ route('courses.class', ['id' => $item['id']]) }}"></a>
-            </div>
-            <div class="mp r">
-                @foreach($courses as $course)
-                <a class="n02" href="{{ route('courses.show', ['id' => $course['id']]) }}">
-                    <em></em>
-                    <img src="{{ $course['image_url'] }}" width="228" height="174" />
-                </a>
-                @endforeach
             </div>
         </div>
     </div>
