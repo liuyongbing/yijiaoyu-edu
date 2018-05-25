@@ -24,7 +24,7 @@ class TeachingsController extends Controller
             'class_number' => $classNumber,
         ];
         $results = $this->repository->all($params, 'sort');
-//echo '<pre>';print_r($results);exit();
+        
         return view($this->route . '.list', [
             'route' => $this->route,
             'items' => isset($results['list']) ? $results['list'] : []

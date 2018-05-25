@@ -61,19 +61,13 @@ class CoursesController extends Controller
     {
         $item = $this->repository->detail($id);
         
-        $params = [
-            'grade_id' => $item['grade_id']
-        ];
-        $courses = $this->repository->all($params);
-        
         $repository = new GradesRepository();
         $grade = $repository->detail($item['grade_id']);
         
         return view($this->route . '.class', [
             'route' => $this->route,
             'item' => $item,
-            'grade' => $grade,
-            'courses' => !empty($courses['list']) ? $courses['list'] : [],
+            'grade' => $grade
         ]);
     }
 }

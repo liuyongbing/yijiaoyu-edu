@@ -18,13 +18,13 @@
                     @foreach($items as $key => $item)
                     <div class="item @if(0 === $key) active @endif">
                         <label>{{ $item['title'] }}</label>
+                        @if(!empty($item['image_url']))
                         <img src="{{ $item['image_url'] }}">
-                    </div>
-                    <div class="item">
-                        <label>{{ $item['title'] }}</label>
+                        @else
                         <div class="txt">
-                        	<div class="txt-center">纯文字</div>
+                            <div class="txt-center">{{ $item['summary'] }}</div>
                         </div>
+                        @endif
                     </div>
                     @endforeach
                 </div>
