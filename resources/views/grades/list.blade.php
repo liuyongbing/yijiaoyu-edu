@@ -49,7 +49,6 @@ h2 {
 
 @section('script')
 <script type="text/javascript" src="{{ asset(elixir('js/modernizr.js')) }}{{ $STATIC_VERSION }}"></script>
-<script type="text/javascript" src="{{ asset(elixir('js/reflection.js')) }}{{ $STATIC_VERSION }}"></script>
 <script type="text/javascript" src="{{ asset(elixir('js/jquery.vm-carousel.js')) }}{{ $STATIC_VERSION }}"></script>
 <script type="text/javascript">
     jQuery(function($){
