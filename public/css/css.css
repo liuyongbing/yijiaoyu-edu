@@ -87,11 +87,11 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
 /*阶段详情*/
 .body-bg01{background:url(../images/jd-bg01.jpg) top center no-repeat #152f44;}
 .stage-detail{}
-.stage-detail .step{ padding-left:40px; margin-top:20px;}
+.stage-detail .step{ padding-left:0; margin-top:20px;}
 .stage-detail .step a{ padding-right:10px; font-size:20px; color:#fff;}
 
 .detail-center{ padding-top:50px;}
-.detail-center .kp{ width:400px; height:430px; margin-right:40px; display:table; text-align:center;}
+.detail-center .kp{ width:400px; height:480px; margin-right:40px; display:table; text-align:center;}
 .detail-center .kp span{ display:table-cell; vertical-align:bottom; }
 .detail-center .kp img {
     cursor: pointer; 
@@ -118,7 +118,7 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
 
 .class-list .page-num{ bottom:20px; right:20px; text-align:center; width:35px; height:35px; line-height:35px; border:1px solid #000; background:#0c202d; color:#fff; font-size:20px;}
 
-.class-list a:hover{ color:#fff;}
+.class-list a:hover{ color:#fff;text-decoration:none}
 .class-list a:hover b{ -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
   -moz-animation: neon2 1.5s ease-in-out infinite alternate;
   animation: neon2 1.5s ease-in-out infinite alternate; }
@@ -156,7 +156,7 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
     vertical-align:bottom
 }
 .zxx_add_class canvas{
-    width:initial !important
+    width:auto !important
 }
   
   @-webkit-keyframes neon2 {
