@@ -30,7 +30,6 @@
 @endsection
 
 @section('script')
-<script type="text/javascript" src="{{ asset(elixir('js/reflection01.js')) }}{{ $STATIC_VERSION }}"></script>
 <script type="text/javascript" src="{{ asset(elixir('js/jquery.mCustomScrollbar.concat.min.js')) }}{{ $STATIC_VERSION }}"></script>
 <script type="text/javascript">
 (function($){

@@ -22,11 +22,13 @@
             'csrfToken' => csrf_token(),
         ]); ?>
     </script>
+    <script type="text/javascript" src="{{ asset(elixir('js/jquery-3.2.1.min.js')) }}{{ $STATIC_VERSION }}"></script>
+    <script type="text/javascript" src="{{ asset(elixir('js/reflection01.js')) }}{{ $STATIC_VERSION }}"></script>
+    
 </head>
 @yield('body')
 
 <!-- Scripts -->
-<script type="text/javascript" src="{{ asset(elixir('js/jquery-3.2.1.min.js')) }}{{ $STATIC_VERSION }}"></script>
 <script type="text/javascript" src="{{ asset(elixir('js/bootstrap.min.js')) }}{{ $STATIC_VERSION }}"></script>
 @yield('script')
 </html>
