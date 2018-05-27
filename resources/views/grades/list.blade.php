@@ -20,7 +20,6 @@
                     <li>
                         <label>入门活动</label>
                         <img class="reflect" src="{{ $item['image_url'] }}" >
-                        <img class="undis reflect" src="{{ $item['image_url'] }}" >
                     </li>
                     @endforeach
                 </ul>
