@@ -64,7 +64,7 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
 .stage-list a span{ cursor:pointer; position:absolute; bottom:0; left:0;}
 .stage-list a img{ }
 .stage-list a:last-child{ position:absolute;}
-.stage-list .a01 {
+/*.stage-list .a01 {
     bottom: 0px;
     left: 0px;
 }
@@ -72,7 +72,7 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
     bottom: 0px;
     left: 220px;
 }
-
+*/
 #moz-content:after {  
     content:"";  
     display:block;
