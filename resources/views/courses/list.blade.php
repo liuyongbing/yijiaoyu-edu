@@ -14,7 +14,7 @@
 			<a class="a0{{ $key+1 }} @if(($key+1) == count($items)) pabs @endif" href="{{ route('courses.show', ['id' => $item['id']]) }}">
 				<span>
 					<label>{{ $item['title'] }}</label>
-					<img src="{{ $item['image_url'] }}" width="110" />
+					<img src="{{ $item['image_url'] }}" class="reflect" />
 				</span>
 			</a>
             @endforeach

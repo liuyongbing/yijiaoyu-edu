@@ -23,7 +23,7 @@ class Controller extends BaseController
         $this->init();
         
         View::share([
-            'STATIC_VERSION' => '?v=' . env('APP_STATIC_VERSION', date('Ymd')),
+            'STATIC_VERSION' => '?v=' . env('APP_STATIC_VERSION', date('YmdHis')),
         ]);
     }
     

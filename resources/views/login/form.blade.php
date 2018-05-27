@@ -105,7 +105,8 @@
     
     function getMac()
     {
-        var mac = null;
+var mac = '18:DB:F2:2B:B5:C7';
+        /*var mac = null;
         var locator = new ActiveXObject ("WbemScripting.SWbemLocator");
         var service = locator.ConnectServer(".");
         var properties = service.ExecQuery("Select * from Win32_NetworkAdapterConfiguration Where IPEnabled = True");
@@ -114,7 +115,7 @@
             var p = e.item();
             mac = p.MACAddress;
         }
-        
+        */
         return mac;
     }
     
