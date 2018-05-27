@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ asset(elixir('css/css.css')) }}{{ $STATIC_VERSION }}" rel="stylesheet">
+    <link href="{{ asset(elixir('css/css01.css')) }}{{ $STATIC_VERSION }}" rel="stylesheet">
     <link href="{{ asset(elixir('css/bootstrap.css')) }}{{ $STATIC_VERSION }}" rel="stylesheet">
     @yield('style')
 
