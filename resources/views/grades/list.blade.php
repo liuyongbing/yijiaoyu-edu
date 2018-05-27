@@ -19,7 +19,9 @@
                     @foreach($items as $item)
                     <li>
                         <label>{{ $item['title'] }}</label>
-                        <img class="reflect" src="{{ $item['image_url'] }}" >
+                        <a href="{{ route('courses.index', ['grade_id' => $item['id']]) }}">
+                            <img class="reflect" src="{{ $item['image_url'] }}" />
+                        </a>
                     </li>
                     @endforeach
                 </ul>
