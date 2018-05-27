@@ -59,8 +59,8 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
 .stage .center{width:838px;}
 .stage .logo{/* top:-160px; */background:url(../images/slogo.png) center / 269px 94px no-repeat;width:269px;height:94px;}
 .stage .logo-add{ top:-160px;}
-.stage-list{height:308px;margin-top:195px;position:relative;}
-.stage-list a{ position:absolute; color:#fff; float:left; width:110px; margin-left:-25px; height:442px;}
+.stage-list{height:308px;margin-top:195px;}/*position:relative;*/
+.stage-list a{ position:relative; color:#fff; float:left; width:110px; margin-left:-25px; height:442px;}
 .stage-list a span{ cursor:pointer; position:absolute; bottom:0; left:0;}
 .stage-list a img{ }
 .stage-list a:last-child{ position:absolute;}
