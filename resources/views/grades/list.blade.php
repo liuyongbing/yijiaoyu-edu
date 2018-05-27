@@ -18,7 +18,7 @@
                 <ul class="vmcarousel-centered vmc-centered">
                     @foreach($items as $item)
                     <li>
-                        <label>入门活动</label>
+                        <label>{{ $item['title'] }}</label>
                         <img class="reflect" src="{{ $item['image_url'] }}" >
                     </li>
                     @endforeach
