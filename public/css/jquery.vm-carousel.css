@@ -12,6 +12,12 @@
 .vmcarousel > li img.undis{display:none;width:328px;cursor:pointer;/*-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(30%, transparent) , to(rgba(250, 250, 250, 0.8)));*/}
 
 .vmcarousel > li label{margin-bottom:-15px; display:block; position:relative; z-index:1;}
+.vmcarousel > li.vmc_active {
+    transform: scale(1.25);
+    padding-top: 30px;
+}
+.vmcarousel > li.vmc_active img{/* display:none; *//* margin:0; */}
+.vmcarousel > li.vmc_active img.undis{ display:block;}
 .vmcarousel > li.vmc_active label {
     color: #fff;
     position: absolute;
@@ -19,14 +25,6 @@
     display: block;
     width: 100%;
 }
-.vmcarousel > li.vmc_active {
-    transform: scale(1.25);
-    padding-top: 30px;
-}
-.vmcarousel > li.vmc_active img{/* display:none; *//* margin:0; */}
-.vmcarousel > li.vmc_active img.undis{ display:block;}
-.vmcarousel > li.vmc_active label{ display:none;}
-
 
 /*.vmc_active .zxx_add_class:nth-child(2){ display:none;}
 .vmc_active .zxx_add_class:nth-child(3){display:block;transform: scale(1.2);}
