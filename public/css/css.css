@@ -59,11 +59,19 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
 .stage .center{width:838px;}
 .stage .logo{/* top:-160px; */background:url(../images/slogo.png) center / 269px 94px no-repeat;width:269px;height:94px;}
 .stage .logo-add{ top:-160px;}
-.stage-list{height:308px;margin-top:195px;}
-.stage-list a{ position:relative; text-align:center; color:#fff; float:left; width:110px; margin-left:-25px; height:308px;}
+.stage-list{height:308px;margin-top:195px;position:relative;}
+.stage-list a{ position:absolute; color:#fff; float:left; width:110px; margin-left:-25px; height:442px;}
 .stage-list a span{ cursor:pointer; position:absolute; bottom:0; left:0;}
 .stage-list a img{ }
 .stage-list a:last-child{ position:absolute;}
+.stage-list .a01 {
+    bottom: 0px;
+    left: 0px;
+}
+.stage-list .a02 {
+    bottom: 0px;
+    left: 220px;
+}
 
 #moz-content:after {  
     content:"";  
@@ -139,14 +147,16 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
 .vmc-centered{padding: 30px 0;}
 .vmc-centered img {transition: all 0.3s ease;}
 .vmc-centered .vmc_active img {
-    
+   
 }
 .vmcarousel > li.vmc_active img{
     display:block !important
 }
+.zxx_add_class{
+    vertical-align:bottom
+}
 .zxx_add_class canvas{
-    transform:scale(1.2);
-    margin-top:42px
+    width:initial !important
 }
   
   @-webkit-keyframes neon2 {
