@@ -88,7 +88,10 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
 .detail-center{ padding-top:50px;}
 .detail-center .kp{ width:400px; height:450px; margin-right:40px; display:table; text-align:center;}
 .detail-center .kp .zxx_add_class{ display:inline-block;}
-.detail-center .kp span{ display:table-cell; vertical-align:middle; }
+.detail-center .kp span {
+    display: table-cell;
+    vertical-align: bottom;
+}
 .detail-center .kp img{ }
 .detail-center .txt{ padding-top:30px; width:700px; color:#fff;}
 .detail-center .txt b{ text-align:center; font-size:32px; display:block; margin-bottom:20px;}
