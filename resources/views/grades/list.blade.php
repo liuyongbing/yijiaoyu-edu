@@ -14,23 +14,6 @@
 		</div>
 		
 		<div class="htmleaf-container">
-            <!--div class="container" id="imageFlow">
-                <div class="bank">
-                    @foreach($items as $item)
-                    <label>{{ $item['title'] }}</label>
-                    <a rel="{{ $item['image_url'] }}" href="{{ route('courses.index', ['grade_id' => $item['id']]) }}"></a>
-                    @endforeach
-                </div-->
-                <!--div class="text">
-                    <div class="title"></div>
-                    <div class="legend"></div>
-                </div>
-                <div class="scrollbar">
-                    <img class="arrow-left" src="/images/left-jt.png" alt="">
-                    <img class="arrow-right" src="/images/right-jt.png" alt="">
-                </div-->
-            <!--/div-->
-            
             <div class="container">
                 <ul class="vmcarousel-centered vmc-centered">
                     @foreach($items as $item)
@@ -49,7 +32,7 @@
 
 @section('script')
 <script type="text/javascript" src="{{ asset(elixir('js/modernizr.js')) }}{{ $STATIC_VERSION }}"></script>
-<script type="text/javascript" src="{{ asset(elixir('js/reflection01.js')) }}{{ $STATIC_VERSION }}"></script>
+<script type="text/javascript" src="{{ asset(elixir('js/reflection.js')) }}{{ $STATIC_VERSION }}"></script>
 <script src="{{ asset(elixir('js/jquery.vm-carousel.js')) }}{{ $STATIC_VERSION }}"></script>
 <script type="text/javascript">
 	jQuery(function($){
