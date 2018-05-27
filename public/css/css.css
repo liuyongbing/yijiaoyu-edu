@@ -90,7 +90,7 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
 .detail-center .kp .zxx_add_class{ display:inline-block;}
 .detail-center .kp span{ display:table-cell; vertical-align:middle; }
 .detail-center .kp img{ }
-.detail-center .txt{ padding-top:30px; width:400px; color:#fff;}
+.detail-center .txt{ padding-top:30px; width:700px; color:#fff;}
 .detail-center .txt b{ text-align:center; font-size:32px; display:block; margin-bottom:20px;}
 .detail-center .txt p{ min-height:365px; font-size:26px;}
 .detail-center .txt a{ display:block; margin:0 auto; background:url(../images/ck-btn.png) no-repeat; width:189px; height:68px;}
