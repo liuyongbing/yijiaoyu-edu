@@ -28,7 +28,7 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
 .login-main .login-div{ margin-right:50px; padding:60px; height:450px; background:url(../images/login-bg.png) left center repeat-y;}
 
 .login-div .mk{ padding:20px; background:#fff; width:280px; height:355px;}
-.login-div .tle{ margin-bottom:20px; font-size:15px; text-align:center; color:#e0e0e0;}
+.login-div .tle{ margin-bottom:20px; font-size:15px; text-align:left; color:#e0e0e0;margin-left:-15px}
 .login-div .tle label{ color:#666; padding:0 20px;}
 .login-div .tle label:first-child{ cursor:pointer;}
 .login-div .tle .tag{ color:#ef5b00;}
