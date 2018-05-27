@@ -7,8 +7,8 @@
 
 <div class="stage">
 	<div class="center prel">
-		<div class="logo logo-add pabs"></div>
-		<div class="stage-list prel">
+		<div class="logo logo-add logo-dm pabs"></div>
+		<div class="stage-list stage-list-add prel">
         @if (!empty($items))
             @foreach($items as $key => $item)
 			<a class="a0{{ $key+1 }} @if(($key+1) == count($items)) pabs @endif" href="{{ route('courses.show', ['id' => $item['id']]) }}">

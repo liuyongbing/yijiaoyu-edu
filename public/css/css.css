@@ -59,11 +59,14 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
 .stage .center{width:838px;}
 .stage .logo{/* top:-160px; */background:url(../images/slogo.png) center / 269px 94px no-repeat;width:269px;height:94px;}
 .stage .logo-add{ top:-160px;}
-.stage-list{height:308px;margin-top:195px;}
+.stage-list{height:308px;margin-top: 195px;}
 .stage-list a{ position:relative; text-align:center; color:#fff; float:left; width:110px; margin-left:-25px; height:308px;}
 .stage-list a span{ cursor:pointer; position:absolute; bottom:0; left:0;}
 .stage-list a img{ cursor:pointer; /*-webkit-box-reflect:below 0 -webkit-linear-gradient(transparent,transparent 80%,rgba(255,255,255,.8)); -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0%, transparent) , to(rgba(250, 250, 250, 0.2)));*/}
 .stage-list a:last-child{ position:absolute;}
+
+.stage-list-add{ margin-top:260px;}
+.stage .logo-dm{ top:-200px;}
 
 #moz-content:after {  
     content:"";  
