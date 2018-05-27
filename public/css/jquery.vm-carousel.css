@@ -9,7 +9,7 @@
 
 .vmcarousel > li label{margin-bottom:-15px; display:block; position:relative; z-index:1;}
 
-.vmcarousel > li.vmc_active { transform: scale(1.2); }
+.vmcarousel > li.vmc_active { transform: scale(1.25); }
 .vmcarousel > li.vmc_active img{/* display:none; *//* margin:0; */}
 .vmcarousel > li.vmc_active img.undis{ display:block;}
 .vmcarousel > li.vmc_active label{ display:none;}
