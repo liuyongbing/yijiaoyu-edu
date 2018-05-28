@@ -18,13 +18,9 @@
                     @foreach($items as $key => $item)
                     <div class="item @if(0 === $key) active @endif">
                         <label>{{ $item['title'] }}</label>
-                        @if(!empty($item['image_url']))
-                        <img src="{{ $item['image_url'] }}">
-                        @else
                         <div class="txt">
-                            <div class="txt-center">{{ $item['summary'] }}</div>
+                            {!! $item['summary'] !!}
                         </div>
-                        @endif
                     </div>
                     @endforeach
                 </div>
@@ -46,9 +42,16 @@
 
 @section('script')
 <script type="text/javascript">
-$(document).keydown(function(event){
+$(function(){
+    $('#carousel-generic').carousel({
+       pause: true,
+       interval: false
+    })
+})
+
+$(document).keydown(function(){
     if (event.keyCode==37){
-        console.info("左")
+        $('#carousel-generic').carousel('prev')
     }
     
     if (event.keyCode==38){
@@ -56,13 +59,12 @@ $(document).keydown(function(event){
     }
     
     if (event.keyCode==39){
-        console.info("右")
+        $('#carousel-generic').carousel('next')
     }
     
     if (event.keyCode==40){
         $('#carousel-generic').carousel('next')
     }
 });
-
 </script>
 @endsection
