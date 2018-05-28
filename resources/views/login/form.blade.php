@@ -29,7 +29,7 @@
                                 <input type="text" id="mobile" name="Login[mobile]" placeholder="手机号" />
                             </p>
                             <p class="code">
-                                <input id="code" name="Login[code]" placeholder="手机验证码" type="text" />
+                                <input id="code" name="Login[code]" placeholder="验证码" type="text" />
                                 <label>
                                     <input id="get_code" type="button" value="获取验证码" onclick="sendcode()" />
                                 </label>
@@ -152,7 +152,7 @@ var mac = '18:DB:F2:2B:B5:C7';
             return;
         } else { 
             obj.attr('disabled',true);
-            obj.val("重新发送(" + countdown + ")");
+            obj.val("重新获取(" + countdown + ")");
             countdown--; 
         } 
         setTimeout(function() { 
