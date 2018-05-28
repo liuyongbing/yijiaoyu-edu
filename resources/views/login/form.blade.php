@@ -65,9 +65,19 @@
                 alert('请输入手机号');
                 return false;
             }
+            var rexMobile = /^1[3-9][0-9]\d{8}$/;
+            if (!rexMobile.test(mobile)) {
+                alert('请输入11位手机号');
+                return false;
+            }
+            
             var code = $('#code').val();
             if (!code) {
                 alert('请输入验证码');
+                return false;
+            }
+            if(!(/^\d{6}$/.test(code))){ 
+                alert('请输入6位验证码');
                 return false;
             }
             var mac_token = $('#mac_token').val();
@@ -125,6 +135,11 @@ var mac = '18:DB:F2:2B:B5:C7';
         var mobile = $('#mobile').val();
         if (!mobile) {
             alert('请输入手机号');
+            return false;
+        }
+        var rexMobile = /^1[3-9][0-9]\d{8}$/;
+        if (!rexMobile.test(mobile)) {
+            alert('请输入11位手机号');
             return false;
         }
         
