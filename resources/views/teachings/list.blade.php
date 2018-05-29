@@ -4,22 +4,17 @@
 
 @section('body')
 <body class="body-bg02">
-
-<<div class="stage-detail">
-	
+<div class="stage-detail">
 	<div class="center prel">
-		
 		<div class="logo"></div>
-		
 		<div class="classdetail-center">
-			
 			<div id="carousel-generic" class="carousel slide" data-ride="">
                 <div class="carousel-inner">
                     @foreach($items as $key => $item)
                     <div class="item @if(0 === $key) active @endif">
                         <label>{{ $item['title'] }}</label>
                         <div class="txt">
-                            {!! $item['summary'] !!}
+                            {!! $item['content'] !!}
                         </div>
                     </div>
                     @endforeach
@@ -32,11 +27,8 @@
                 </a>
             </div>
 		</div>
-		
 	</div>
-	
 </div>
-
 </body>
 @endsection
 
@@ -44,8 +36,8 @@
 <script type="text/javascript">
 $(function(){
     $('#carousel-generic').carousel({
-       pause: true,
-       interval: false
+        pause: true,
+        interval: false
     })
 })
 
@@ -53,15 +45,12 @@ $(document).keydown(function(){
     if (event.keyCode==37){
         $('#carousel-generic').carousel('prev')
     }
-    
     if (event.keyCode==38){
         $('#carousel-generic').carousel('prev')
     }
-    
     if (event.keyCode==39){
         $('#carousel-generic').carousel('next')
     }
-    
     if (event.keyCode==40){
         $('#carousel-generic').carousel('next')
     }
