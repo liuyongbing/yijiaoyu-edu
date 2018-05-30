@@ -23,7 +23,11 @@ class TeachingsController extends Controller
             'course_id' => $courseId,
             'class_number' => $classNumber,
         ];
-        $results = $this->repository->all($params, 'sort');
+        $orderBy = [
+            'class_number' => 'asc',
+            'sort' => 'asc',
+        ];
+        $results = $this->repository->all($params, $orderBy);
         
         return view($this->route . '.list', [
             'route' => $this->route,

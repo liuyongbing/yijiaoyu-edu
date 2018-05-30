@@ -79,6 +79,7 @@ class Repository
      */
     public function all($params = [], $orderBy = '')
     {
+        $params['order'] = $orderBy;
         return $this->endPoint->all($params);
     }
 }
