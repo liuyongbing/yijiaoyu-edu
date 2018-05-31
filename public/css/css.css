@@ -119,8 +119,23 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
 .body-bg02{background:url(../images/jd-bg02.jpg) top center no-repeat #152f44;}
 .class-list{ padding:100px 0 0; height:700px;}
 .class-list a{ margin:0 50px 50px 0; text-align:center; font-size:36px; color:#0a7085; display:inline-block; background:url(../images/time-bg.png) no-repeat; width:145px; height:65px; line-height:65px;}
-.class-list a b{display:inline-block;height:65px;line-height:65px;cursor:pointer;margin-right:5px;position:relative;z-index:1;vertical-align:top; font-size:50px;}
-.class-list a label{display:inline-block;height:65px; cursor:pointer;/* vertical-align:middle; */}
+.class-list a b {
+    display:inline-block;
+    height:65px;
+    line-height:65px;
+    cursor:pointer;
+    margin-right:3px;
+    position:relative;
+    z-index:1;
+    vertical-align:top; 
+    font-size:40px;
+}
+.class-list a label {
+    display:inline-block;
+    height:65px;
+    cursor:pointer;/* vertical-align:middle; */
+    font-size:30px;
+}
 
 .class-list .page-num{ bottom:20px; right:20px; text-align:center; width:35px; height:35px; line-height:35px; border:1px solid #000; background:#0c202d; color:#fff; font-size:20px;}
 
