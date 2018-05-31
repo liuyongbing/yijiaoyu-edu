@@ -24,6 +24,7 @@
 		</div>
 	</div>
 </div>
+@include('layouts.logout')
 </body>
 @endsection
 

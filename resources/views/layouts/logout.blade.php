@@ -1,0 +1,1 @@
+<div style="position: relative; z-index: 9999"><a href="{{ route('logout') }}" style="position:fixed;right:0;bottom:0">退出</a></div>
