@@ -12,7 +12,7 @@
                 <div class="carousel-inner">
                     @foreach($items as $key => $item)
                     <div class="item @if(0 === $key) active @endif">
-                        <label>{{ $item['title'] }}</label>
+                        <!--label>{{ $item['title'] }}</label-->
                         <div class="txt">
                             {!! $item['content'] !!}
                         </div>

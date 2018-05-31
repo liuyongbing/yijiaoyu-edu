@@ -155,7 +155,15 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
 .classdetail-center .carousel{ width:759px; height:570px; margin:0 auto;}
 .classdetail-center .item label{ width:100%; position:absolute; top:0; left:0; text-align:center; color:#fff; font-size:40px; font-weight:bold;}
 
-.classdetail-center .item .txt{ width:100%; text-align:center; display:table; height:500px; color:#fff; font-size:20px; padding:80px 20px 20px; overflow:hidden;}
+.classdetail-center .item .txt {
+    width:100%;
+    text-align:center;
+    display:table;
+    height:500px;
+    color:#fff;
+    font-size:20px;
+    padding:20px 20px 20px;
+    overflow:hidden;}
 .classdetail-center .item .txt .txt-center{ display:table-cell; vertical-align:middle;}
 
 
