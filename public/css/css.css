@@ -152,7 +152,9 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
 
 /*详情*/
 .stage-detail .logo{ margin:20px 0; background:url(../images/slogo.png) center / 269px 94px no-repeat; width:269px; height:94px;}
-.classdetail-center .carousel{ width:759px; height:570px; margin:0 auto;}
+.classdetail-center .carousel {
+    margin: 0 auto;
+}
 .classdetail-center .item label{ width:100%; position:absolute; top:0; left:0; text-align:center; color:#fff; font-size:40px; font-weight:bold;}
 
 .classdetail-center .item .txt {
