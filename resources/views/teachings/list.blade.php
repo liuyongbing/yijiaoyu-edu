@@ -19,12 +19,12 @@
                     </div>
                     @endforeach
                 </div>
-                <a class="left carousel-control" href="#carousel-generic" data-slide="prev">
+                <!--a class="left carousel-control" href="#carousel-generic" data-slide="prev">
                     <span class="fa fa-angle-left"></span>
-                </a>
-                <a class="right carousel-control" href="#carousel-generic" data-slide="next">
+                </a-->
+                <!--a class="right carousel-control" href="#carousel-generic" data-slide="next">
                     <span class="fa fa-angle-right"></span>
-                </a>
+                </a-->
             </div>
 		</div>
 	</div>
