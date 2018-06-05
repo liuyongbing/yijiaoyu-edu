@@ -153,6 +153,10 @@ var mac = '18:DB:F2:2B:B5:C7';
             dataType: 'json',
             success: function(response) {
                 
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown)
+            {
+                alert('服务器错误');
             }
         });
         var obj = $("#get_code");
