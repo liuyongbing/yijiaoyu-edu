@@ -42,6 +42,10 @@ class CoursesController extends Controller
     public function show($id)
     {
         $item = $this->repository->detail($id);
+        if (!$item['status'])
+        {
+            return redirect()->route($this->route . '.index');
+        }
         
         $repository = new GradesRepository();
         $grade = $repository->detail($item['grade_id']);
