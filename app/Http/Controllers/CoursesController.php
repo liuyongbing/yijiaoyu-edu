@@ -23,7 +23,8 @@ class CoursesController extends Controller
     public function index(Request $request)
     {
         $params = [
-            'grade_id' => $request->input('grade_id', '')
+            'grade_id' => $request->input('grade_id', ''),
+            'status' => 1
         ];
         $results = $this->repository->all($params);
         
