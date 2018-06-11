@@ -28,6 +28,12 @@ class CoursesController extends Controller
         ];
         $results = $this->repository->all($params);
         
+        if (!empty($results['list']) && 1 == count($results['list']))
+        {
+            $id = $results['list'][0]['id'];
+            return $this->show($id);
+        }
+        
         return view($this->route . '.list', [
             'route' => $this->route,
             'items' => isset($results['list']) ? $results['list'] : []
