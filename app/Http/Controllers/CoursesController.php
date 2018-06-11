@@ -28,9 +28,11 @@ class CoursesController extends Controller
         ];
         $results = $this->repository->all($params);
         
+        //2018-06-11:没有色带的卡片, 直接去到详情简介页面
         if (!empty($results['list']) && 1 == count($results['list']))
         {
             $id = $results['list'][0]['id'];
+            //return redirect()->route($this->route . '.show', ['id' => $id]);
             return $this->show($id);
         }
         
