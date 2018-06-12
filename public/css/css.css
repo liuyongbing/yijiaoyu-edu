@@ -35,11 +35,21 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
 
 .login-div .pub-lp{}
 .login-div .pub-lp p{ margin-bottom:10px; overflow:hidden;}
-.login-div .pub-lp input{ border:1px solid #ccc;  padding:0 10px; border-radius:0; width:100%; height:32px; line-height:32px;}
+.login-div .pub-lp input {
+    border:1px solid #ccc; 
+    padding:0 10px;
+    border-radius:0;
+    width:100%;
+    height:32px;
+    line-height:32px;
+}
 .login-div .pub-lp .code { border:1px solid #ccc; }
 .login-div .pub-lp .code input{ border:0; width:110px;}
+.login-div .pub-lp #code {
+    width: 138px;
+}
 .login-div .pub-lp .code label{font-size:12px; font-weight:500; color:#333; width:100px; float:right; height:20px;line-height:20px; vertical-align:middle;}
-.login-div .pub-lp .post{ margin-top:20px; text-align:center; display:block; background:#ef5b00; color:#fff; height:32px; line-height:32px;}
+.login-div .pub-lp .post{ margin-top:20px; text-align:center; display:block; background:#ef5b00; color:#fff; height:32px; line-height:32px; text-decoration: none;}
 .login-div .pub-lp .btn{ text-align:right; padding:8px 0; color:#9d9d9d;}
 .login-div .pub-lp .btn a{ color:#9d9d9d;}
 
