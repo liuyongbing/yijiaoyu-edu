@@ -115,8 +115,7 @@
     
     function getMac()
     {
-var mac = '18:DB:F2:2B:B5:C7';
-        /*var mac = null;
+        var mac = null;
         var locator = new ActiveXObject ("WbemScripting.SWbemLocator");
         var service = locator.ConnectServer(".");
         var properties = service.ExecQuery("Select * from Win32_NetworkAdapterConfiguration Where IPEnabled = True");
@@ -125,7 +124,6 @@ var mac = '18:DB:F2:2B:B5:C7';
             var p = e.item();
             mac = p.MACAddress;
         }
-        */
         return mac;
     }
     
@@ -152,7 +150,10 @@ var mac = '18:DB:F2:2B:B5:C7';
             },
             dataType: 'json',
             success: function(response) {
-                
+                if (response.message != 'OK')
+                {
+                    alert(response.message);
+                }
             },
             error: function (XMLHttpRequest, textStatus, errorThrown)
             {
