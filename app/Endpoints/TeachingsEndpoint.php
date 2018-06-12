@@ -3,6 +3,7 @@
 namespace App\Endpoints;
 
 use App\Endpoints\Endpoints;
+use App\Facades\ApiClient;
 
 class TeachingsEndpoint extends Endpoints
 {
@@ -19,7 +20,6 @@ class TeachingsEndpoint extends Endpoints
      */
     public function all($params)
     {
-        //TODO: 实现
         $response = ApiClient::get($this->api . '/all', $params);
         
         return $this->response($response);
