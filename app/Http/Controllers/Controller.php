@@ -43,9 +43,10 @@ class Controller extends BaseController
     {
         $page = $request->input('page', 1);
         $size = Dictionary::PAGE_SIZE;
+        $offset = ($page - 1) * $size;
         
-        $results = $this->repository->list(['status' => 1], $page, $size);
-//return $this->response($results);
+        $results = $this->repository->list(['status' => 1], $offset, $size);
+        
         return view($this->route . '.list', [
             'route' => $this->route,
             'items' => isset($results['list']) ? $results['list'] : []
