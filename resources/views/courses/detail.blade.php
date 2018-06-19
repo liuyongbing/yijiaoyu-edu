@@ -19,7 +19,7 @@
         <div class="detail-center">
             <div class="kp l"><span><img src="{{ $item['image_url'] }}" class="reflect"></span></div>
             <div class="txt l">
-                <b>{{ $item['title'] }} - 课程简介</b>
+                <b>{{ $item['title'] }}</b>
                 <p>{{ $item['summary'] }}</p>
                 <a class="btn" href="{{ route('courses.class', ['id' => $item['id']]) }}"></a>
             </div>
