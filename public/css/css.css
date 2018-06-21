@@ -116,7 +116,7 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
 .detail-center .kp img{ }
 .detail-center .txt{ padding-top:30px; width:700px; color:#fff;}
 .detail-center .txt b{ text-align:center; font-size:32px; display:block; margin-bottom:20px;}
-.detail-center .txt p{ min-height:365px; font-size:26px;}
+.detail-center .txt p{ font-size:26px;}
 .detail-center .txt a{ display:block; margin:0 auto; background:url(../images/ck-btn.png) no-repeat; width:189px; height:68px;}
 .detail-center .mp{overflow:auto;height:550px;margin-right:40px;width:228px;padding-top:40px;}
 .detail-center .mp a{ width:228px; height:174px; display:block; position:relative;}

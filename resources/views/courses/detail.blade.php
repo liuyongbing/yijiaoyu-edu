@@ -20,7 +20,7 @@
             <div class="kp l"><span><img src="{{ $item['image_url'] }}" class="reflect"></span></div>
             <div class="txt l">
                 <b>{{ $item['title'] }}</b>
-                <p>{{ $item['summary'] }}</p>
+                <div>{!! $item['summary'] !!}</div>
                 <a class="btn" href="{{ route('courses.class', ['id' => $item['id']]) }}"></a>
             </div>
         </div>
