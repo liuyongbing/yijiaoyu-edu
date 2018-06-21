@@ -22,6 +22,7 @@ class TeachingsController extends Controller
         $params = [
             'course_id' => $courseId,
             'class_number' => $classNumber,
+            'status' => 1
         ];
         $orderBy = [
             'class_number' => 'asc',
