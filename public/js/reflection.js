@@ -105,11 +105,11 @@ var Reflection = {
 					var context = canvas.getContext("2d");
 				
 					canvas.style.height = reflectionHeight+'px';
-					canvas.style.width = 210+'px';
+					canvas.style.width = reflectionWidth+'px';
 					canvas.height = reflectionHeight;
 					canvas.width = reflectionWidth;
 					
-					d.style.width = 210+'px';
+					d.style.width = reflectionWidth+'px';
 					d.style.height = divHeight+'px';
 					p.parentNode.replaceChild(d, p);
 					
