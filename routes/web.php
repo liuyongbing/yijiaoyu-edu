@@ -24,6 +24,8 @@ Route::resource('grades', 'GradesController');
 //课程
 Route::resource('courses', 'CoursesController');
 Route::get('courses/{id}/class', 'CoursesController@class')->name('courses.class');
+//课件
+Route::resource('coursewares', 'CoursewaresController');
 //课时
 Route::resource('teachings', 'TeachingsController');
 //短信

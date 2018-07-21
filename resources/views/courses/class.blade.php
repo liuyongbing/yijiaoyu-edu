@@ -22,7 +22,7 @@
             <div class="class-list prel">
                 <!--div class="page-num pabs">2</div-->
                 @for($num = 1; $num <= $item['class_total']; $num++)
-                <a href="{{ route('teachings.index', [
+                <a href="{{ route('coursewares.index', [
                     'course_id' => $item['id'],
                     'class_number' => $num,
                 ]) }}">
