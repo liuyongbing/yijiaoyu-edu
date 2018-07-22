@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Constants\Dictionary;
 use App\Repositories\GradesRepository;
+use Illuminate\Http\Request;
 
 class GradesController extends Controller
 {
