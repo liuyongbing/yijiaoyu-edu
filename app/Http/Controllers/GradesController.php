@@ -7,8 +7,6 @@ use App\Repositories\GradesRepository;
 
 class GradesController extends Controller
 {
-    const BRAND_ID = 1;
-    
     public function init()
     {
         $this->repository = new GradesRepository();
@@ -27,8 +25,9 @@ class GradesController extends Controller
         $size = Dictionary::PAGE_SIZE;
         $offset = ($page - 1) * $size;
         
+        $brandId = $request->session()->get('brand_id');
         $params = [
-            'brand_id' => static::BRAND_ID,
+            'brand_id' => $brandId,
             'status' => 1
         ];
         
