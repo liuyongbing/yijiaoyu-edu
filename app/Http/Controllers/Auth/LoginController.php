@@ -75,6 +75,7 @@ class LoginController extends Controller
         {
             $request->session()->put('id', $result['id']);
             $request->session()->put('account', $result['account']);
+            $request->session()->put('brand_id', $result['brand_id']);
         }
         else
         {
