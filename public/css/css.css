@@ -16,17 +16,21 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
 .son-center{flex: 1;}
 .JoinUs{flex: 1;}
 
-.center{ width:1200px; margin:0 auto;}
+.center{ width:100%; margin:0 auto;}
 
 /*login*/
-.head{ height:110px;}
-.head a{ margin:20px 0 0 130px; background:url(../images/logo.png) center / 245px 67px no-repeat; width:245px; height:67px; display:block;}
+.head{ height:142px;}
+.head a{ margin:10px 0 0 60px; background:url(../images/logo_100yjy.png) center / 360px 122px no-repeat; width:360px; height:122px; display:block;}
 
-.login-main{ background:#11a5fb; height:450px;}
-.login-main .center{ height:450px; background:url(../images/login-img.png) left center  / 400px 376px no-repeat;}
+.login-main{ background:#11a5fb; height:698px;}
+.login-main .center{ height:698px; background:url(../images/login_bg_100yjy.jpg) left center  / 1924px 698px no-repeat;}
 .login-main .txt{ top:100px; left:440px; color:#fff; font-size:36px; line-height:76px;}
-.login-main .login-div{ margin-right:50px; padding:60px; height:450px; background:url(../images/login-bg.png) left center repeat-y;}
-
+.login-main .login-div {
+    margin-top:100px;
+    margin-right:12%;
+    padding:60px;
+    height:450px;
+}
 .login-div .mk{ padding:20px; background:#fff; width:280px; height:355px;}
 .login-div .tle{ margin-bottom:20px; font-size:15px; text-align:left; color:#e0e0e0;margin-left:-15px}
 .login-div .tle label{ color:#666; padding:0 20px;}
