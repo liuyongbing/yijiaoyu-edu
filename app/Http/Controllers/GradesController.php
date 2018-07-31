@@ -34,7 +34,18 @@ class GradesController extends Controller
         
         $results = $this->repository->list($params, $offset, $size);
         
-        return view($this->route . '.list', [
+        switch ($brandId)
+        {
+            case Dictionary::$teacherTypes['teacher_pocketcat']:
+            case 2:
+                $view = $this->route . '.list_' . 'pocketcat';
+                break;
+            default:
+                $view = $this->route . '.list';
+                break;
+        }
+        
+        return view($view, [
             'route' => $this->route,
             'items' => isset($results['list']) ? $results['list'] : []
         ]);

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Repositories\CoursesRepository;
 use App\Repositories\GradesRepository;
 use Illuminate\Http\Request;
+use App\Constants\Dictionary;
 
 class CoursesController extends Controller
 {
@@ -36,9 +37,25 @@ class CoursesController extends Controller
             return $this->show($id);
         }
         
-        return view($this->route . '.list', [
+        $repository = new GradesRepository();
+        $grade = $repository->detail($params['grade_id']);
+        
+        $brandId = $request->session()->get('brand_id');
+        switch ($brandId)
+        {
+            case Dictionary::$teacherTypes['teacher_pocketcat']:
+            case 2:
+                $view = $this->route . '.list_' . 'pocketcat';
+                break;
+            default:
+                $view = $this->route . '.list';
+                break;
+        }
+        
+        return view($view, [
             'route' => $this->route,
-            'items' => isset($results['list']) ? $results['list'] : []
+            'items' => isset($results['list']) ? $results['list'] : [],
+            'grade' => $grade
         ]);
     }
     
@@ -70,14 +87,26 @@ class CoursesController extends Controller
      * 
      * @param int $id
      */
-    public function class($id)
+    public function class(Request $request, $id)
     {
         $item = $this->repository->detail($id);
         
         $repository = new GradesRepository();
         $grade = $repository->detail($item['grade_id']);
         
-        return view($this->route . '.class', [
+        $brandId = $request->session()->get('brand_id');
+        switch ($brandId)
+        {
+            case Dictionary::$teacherTypes['teacher_pocketcat']:
+            case 2:
+                $view = $this->route . '.class_' . 'pocketcat';
+                break;
+            default:
+                $view = $this->route . '.class';
+                break;
+        }
+        
+        return view($view, [
             'route' => $this->route,
             'item' => $item,
             'grade' => $grade

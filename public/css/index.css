@@ -1,0 +1,135 @@
+.content{
+    width: 100%;
+    height: 100%;
+    background: url('../imgs/adBG.jpg') no-repeat center;
+    background-size:100% cover;
+}
+.content .title{
+    width: 406px;
+    height: 197px;
+    padding-left: 107px;
+    padding-top: 40px;
+}
+.card-content .title{
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    color: #fff;
+    font-size: 30px;
+    padding: 30px;
+}
+.card-content .title a{
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 1px 2px 3px #ddd;
+  }
+  .card-content .title a:hover,.class-content .title a:focus{
+    text-decoration: underline
+  }
+.content .inner{
+    width: 1280px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 40px 0  0px 0 ;
+}
+.content .scroll_box{
+    width: 1200px;
+    padding: 40px;
+    margin: 0 auto;
+    overflow: visible;
+}
+.content .scroll_box li{
+    width: 200px;
+    border-radius: 10px;
+    /* margin: 0 40px !important; */
+   /*  display: table-cell; */
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s;
+   /*  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1))); */
+
+}
+.card_inner .scroll_box{
+   padding: 0
+}
+.card_inner .scroll_box li{
+   width: 328px;
+   margin: 0 120px;
+   display: inline-block !important;
+}
+.content .scroll_box li .link{
+  width: 260px;
+  padding: 5px 0;
+  margin: 0 auto;
+  background: #409625;
+  color: #fff;
+  font-size: 42px;
+  display: block;
+  margin-bottom:20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.content .scroll_box li .link:hover,.content .scroll_box li .link:focus{
+   background: #000;
+   text-decoration: underline
+
+}
+.content .scroll_box li img{
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid #fff;
+      margin-bottom: 3px;
+       box-shadow: 1px 1px 30px #ddd
+
+}
+  .down{position: relative;left:2px;} 
+ .reflection{width:100%;height:220px;left:-10px;top:100%;
+   -webkit-transform: scaleY(-1); 
+   -moz-transform: scaleY(-1); 
+   -ms-transform: scaleY(-1); 
+   -o-transform: scaleY(-1); 
+   transform: scaleY(-1); 
+   opacity:0.1; 
+   filter:alpha(opacity='10'); 
+}
+ .overlay{position: absolute;width:100%; height:100px;bottom:0px; left: -2px;
+ background-image: -moz-linear-gradient(center bottom, #7a0e65 20%, rgba(255,255,255,0) 90%); 
+ background-image: -o-linear-gradient(rgba(255,255,255,0) 10%, #7a0e65 30%); 
+ background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.20, #7a0e65), color-stop(0.90, rgba(255,255,255,0))); 
+ }
+
+.content .scroll_box .swiper-slide-active{
+    -webkit-transform:scale(1.2);
+    -o-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    transform:scale(1.2);
+     -webkit-box-shadow: 1px 1px 20px #520a51;
+      -moz-box-shadow: 1px 1px 20px #520a51;
+       -o-box-shadow: 1px 1px 20px #520a51;
+    box-shadow: 1px 1px 20px #520a51;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+
+}
+.card_inner .scroll_box .swiper-slide-active{
+      -webkit-transform:scale(1) !important;
+    -o-transform:scale(1)  !important;
+    -moz-transform:scale(1)  !important;
+    transform:scale(1)  !important;
+     -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+       -o-box-shadow: none;
+    box-shadow: none;
+}
+.swiper-button-prev{
+  background-image: url('../imgs/prev.png'); 
+}
+.swiper-button-next{
+  background-image: url('../imgs/next.png');
+}
