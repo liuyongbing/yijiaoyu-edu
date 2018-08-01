@@ -13,7 +13,7 @@
     
     <div class="login-main">
         <div class="center prel">
-            <div class="txt pabs">身体更加健壮<br/>性格更加开朗<br/>思维更加灵活</div>
+            <!--div class="txt pabs"></div-->
             <div class="login-div r">
                 <div class="mk">
                     <div class="tle">
@@ -44,7 +44,7 @@
     </div>
     
     <div class="foot">
-        <div class="center">中国跆拳道教育研发领航者</div>
+        <div class="center">陪伴孩子成长的素质教育平台</div>
     </div>
 </body>
 @endsection
