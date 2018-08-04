@@ -4,7 +4,7 @@ $(function(){
     slidesPerView: 'auto',
     centeredSlides: true,
     observer:true,
-    // loop:true,
+    loop:true,
     observeParents:true,
     spaceBetween: 60,
     initialSlide :2,
