@@ -27,18 +27,25 @@ class GradesController extends Controller
         $offset = ($page - 1) * $size;
         
         $brandId = $request->session()->get('brand_id');
+//$brandId = 3;
+//$brandId = 2;
         $params = [
             'brand_id' => $brandId,
             'status' => 1
         ];
         
         $results = $this->repository->list($params, $offset, $size);
+//return $results;
         
         switch ($brandId)
         {
             case Dictionary::$teacherTypes['teacher_pocketcat']:
             case 2:
                 $view = $this->route . '.list_' . 'pocketcat';
+                break;
+            case Dictionary::$teacherTypes['teacher_town']:
+            case 3:
+                $view = $this->route . '.list_' . 'town';
                 break;
             default:
                 $view = $this->route . '.list';
