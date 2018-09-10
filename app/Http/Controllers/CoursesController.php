@@ -47,6 +47,10 @@ class CoursesController extends Controller
             case 2:
                 $view = $this->route . '.list_' . 'pocketcat';
                 break;
+            case Dictionary::$teacherTypes['teacher_town']:
+            case 3:
+                $view = $this->route . '.list_' . 'town';
+                break;
             default:
                 $view = $this->route . '.list';
                 break;
