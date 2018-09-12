@@ -3,24 +3,44 @@
 .vmc-container img[src$=".svg"]{width: 100% !important; height: auto !important; max-height: 100%;}
 .vmc-viewport {
     overflow: hidden;
-    height: 450px;
+    height: 420px;
     padding-top: 50px;
+	/*border: 1px solid #000;*/
+	/*background-color: green;*/
 }
 
-.vmcarousel{list-style-type: none; padding: 0; margin: 0; width: 1000%;}
-.vmcarousel:after{content: ''; display: table; clear: both;}
-.vmcarousel > li{
-    float:left; text-align:center; color:#fff; width: 200px;
+.vmcarousel{
+	list-style-type: none; padding: 0; margin: 0; width: 1000%;
+	/*border: 1px solid #000;*/
 }
-.vmcarousel > li:hover{
+.vmcarousel:after{content: ''; display: table; clear: both;}
+.vmcarousel li{
+    float:left; text-align:center; color:#fff; width: 180px;
+	/*border: 1px solid #000;*/
+	/*margin:0 10px;*/
+	/*padding: 0 10px;*/
+}
+.vmcarousel li:hover{
     transform: scale(1.5);
     padding-top:30px;
- }
-.vmcarousel > li img{ width:150px; display: block; margin: 0 auto; max-width:100%; cursor:pointer; -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(30%, transparent) , to(rgba(250, 250, 250, 0.2))); }
-.vmcarousel > li label{
+	/*width: 150px;*/
+}
+.vmcarousel li a{
+	display:block;
+	width:150px;
+	/*background-color: green;*/
+	margin: 0 auto;
+}
+.vmcarousel li img{
+	/*border: 1px solid #fff;*/
+	width:150px; display: block; margin: 0 auto; max-width:100%; cursor:pointer; 
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(30%, transparent) , to(rgba(250, 250, 250, 0.2)));
+}
+.vmcarousel li label{
     margin-bottom:15px; display:block; position:relative; z-index:1;
-    text-align: left;
-    text-indent: 4em;
+    text-align: center;
+    
+	/*border: 1px solid #fff; text-indent: 4em;*/
 }
 
 /*.vmcarousel > li.vmc_active {
