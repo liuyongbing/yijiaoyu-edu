@@ -15,7 +15,7 @@
             <div class="stage-list">
             @if (!empty($items))
                 @foreach($items as $key => $item)
-                <a style="padding-top: {{ 120-20*$key }}px" href="{{ route('courses.show', ['id' => $item['id']]) }}">
+                <a style="padding-top: {{ 120-20*$key }}px" href="{{ route('courses.class', ['id' => $item['id']]) }}">
                     <span>{{ $item['title'] }}</span>
                     <img src="{{ $item['image_url'] }}" />
                 </a>
