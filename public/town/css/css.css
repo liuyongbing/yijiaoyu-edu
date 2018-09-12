@@ -18,69 +18,15 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
 
 .center{ width:100%; margin:0 auto;}
 
-/*login*/
-.head{ height:142px;}
-.head a{ margin:10px 0 0 60px; background:url(../images/logo_100yjy.png) center / 360px 122px no-repeat; width:360px; height:122px; display:block;}
-
-.login-main{ background:#11a5fb; height:698px;}
-.login-main .center{ height:698px; background:url(../images/login_bg_100yjy.jpg) left center  / 1924px 698px no-repeat;}
-.login-main .txt{ top:100px; left:440px; color:#fff; font-size:36px; line-height:76px;}
-.login-main .login-div {
-    margin-top:100px;
-    margin-right:12%;
-    padding:60px;
-    height:450px;
-}
-.login-div .mk{ padding:20px; background:#fff; width:280px; height:355px;}
-.login-div .tle{ margin-bottom:20px; font-size:15px; text-align:left; color:#e0e0e0;margin-left:-15px}
-.login-div .tle label{ color:#666; padding:0 20px;}
-.login-div .tle label:first-child{ cursor:pointer;}
-.login-div .tle .tag{ color:#ef5b00;}
-
-.login-div .pub-lp{}
-.login-div .pub-lp p{ margin-bottom:10px; overflow:hidden;}
-.login-div .pub-lp input {
-    border:1px solid #ccc; 
-    padding:0 10px;
-    border-radius:0;
-    width:100%;
-    height:32px;
-    line-height:32px;
-}
-.login-div .pub-lp .code { border:1px solid #ccc; }
-.login-div .pub-lp .code input{ border:0; width:110px;}
-.login-div .pub-lp #code {
-    width: 138px;
-}
-.login-div .pub-lp .code label{font-size:12px; font-weight:500; color:#333; width:100px; float:right; height:20px;line-height:20px; vertical-align:middle;}
-.login-div .pub-lp .post{ margin-top:20px; text-align:center; display:block; background:#ef5b00; color:#fff; height:32px; line-height:32px; text-decoration: none;}
-.login-div .pub-lp .btn{ text-align:right; padding:8px 0; color:#9d9d9d;}
-.login-div .pub-lp .btn a{ color:#9d9d9d;}
-
-.login-div .pub-lp input.xl-5{ width:49%;}
-.login-div .pub-lp.d02 p input:first-child{ float:left;} 
-.login-div .pub-lp.d02 p input:last-child{ float:right;} 
-.login-div .pub-lp.d02 .post{ margin:0;}
-
-.login-div .pub-lp.d03 .post{ margin:0;}
-
-.foot{ height:110px; line-height:110px; text-align:center; color:#11a5fb; font-size:24px;}
-
-
 
 /*阶段*/
-.body-bg{background:url(../images/jd-bg.jpg) top center no-repeat #152f44;}
-.stage .center{width:838px;}
-.stage .logo{/* top:-160px; */background:url(../images/slogo.png) center / 269px 94px no-repeat;width:269px;height:94px;}
-.stage .logo-add{ top:-160px;}
-.stage-list{height:308px;margin-top: 195px;}
-.stage-list a{ position:relative; text-align:center; color:#fff; float:left; width:110px; margin-left:-25px; height:308px;}
-.stage-list a span{ cursor:pointer; position:absolute; bottom:0; left:0;}
-.stage-list a img{ cursor:pointer; /*-webkit-box-reflect:below 0 -webkit-linear-gradient(transparent,transparent 80%,rgba(255,255,255,.8)); -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0%, transparent) , to(rgba(250, 250, 250, 0.2)));*/}
-.stage-list a:last-child{ position:absolute;}
-
+.stage-list {width:820px;height: 345px; text-align: center;margin: 0px auto 0 auto;}
+.stage-list a{ position:relative; text-align:center; color:#fff; float:left; width:98px; margin-left:16px; height:345px;}
+.stage-list a:hover{font-size: 20px; text-decoration: none; color: #ffffff;}
+.stage-list a span{ font-size: 20px;text-decoration: none; color: #ffffff;}
+.stage-list a img{ cursor:pointer; position:absolute; bottom:0; left:0;}
+.stage-list a img{ cursor:pointer; -webkit-box-reflect:below 0 -webkit-linear-gradient(transparent,transparent 80%,rgba(255,255,255,.8)); -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0%, transparent) , to(rgba(250, 250, 250, 0.2)));}
 .stage-list-add{ margin-top:260px;}
-.stage .logo-dm{ top:-200px;}
 
 #moz-content:after {  
     content:"";  
@@ -92,102 +38,14 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
     opacity:0.7;
  }
 
-
-/*阶段详情*/
-.body-bg01{background:url(../images/jd-bg01.jpg) top center no-repeat #152f44;}
-.stage-detail{}
-.stage-detail .step{ padding-left:40px; margin-top:20px;}
-.stage-detail .step a{ padding-right:10px; font-size:20px; color:#fff;}
-
-.detail-center{ padding-top:50px;}
-.detail-center .kp {
-    width: 400px;
-    height: 450px;
-    margin-right: 40px;
-    /* display: table; */
-    text-align: center;
-    position: relative;
-}
-.detail-center .kp .zxx_add_class{ display:inline-block;}
-.detail-center .kp span {
-    display: block;
-    vertical-align: bottom;
-    position: absolute;
-    left: 50%;
-    margin-left: -25%;
-    bottom: -78px;
-}
-.detail-center .kp img{ }
-.detail-center .txt{ padding-top:30px; width:700px; color:#fff;}
-.detail-center .txt b{ text-align:center; font-size:32px; display:block; margin-bottom:20px;}
-.detail-center .txt p{ font-size:26px;}
-.detail-center .txt a{ display:block; margin:0 auto; background:url(../images/ck-btn.png) no-repeat; width:189px; height:68px;}
-.detail-center .mp{overflow:auto;height:550px;margin-right:40px;width:228px;padding-top:40px;}
-.detail-center .mp a{ width:228px; height:174px; display:block; position:relative;}
-.detail-center .mp .n02:hover em{ position:absolute; background:url(../images/n02-hover.png) no-repeat; width:228px; height:174px;}
-.detail-center .mp .n03:hover em{ position:absolute; background:url(../images/n03-hover.png) no-repeat; width:228px; height:174px;}
-.detail-center .mp .n04:hover em{ position:absolute; background:url(../images/n04-hover.png) no-repeat; width:228px; height:174px;}
-
-
-/*课时*/
-.body-bg02{background:url(../images/jd-bg02.jpg) top center no-repeat #152f44;}
-.class-list{ padding:100px 0 0; height:700px;}
-.class-list a{ margin:0 50px 50px 0; text-align:center; font-size:36px; color:#0a7085; display:inline-block; background:url(../images/time-bg.png) no-repeat; width:145px; height:65px; line-height:65px;}
-.class-list a b {
-    display:inline-block;
-    height:65px;
-    line-height:65px;
-    cursor:pointer;
-    margin-right:3px;
-    position:relative;
-    z-index:1;
-    vertical-align:top; 
-    font-size:40px;
-}
-.class-list a label {
-    display:inline-block;
-    height:65px;
-    cursor:pointer;/* vertical-align:middle; */
-    font-size:30px;
-}
-
-.class-list .page-num{ bottom:20px; right:20px; text-align:center; width:35px; height:35px; line-height:35px; border:1px solid #000; background:#0c202d; color:#fff; font-size:20px;}
-
-.class-list a:hover{ color:#fff;text-decoration:none}
-.class-list a:hover b{ -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
-  animation: neon2 1.5s ease-in-out infinite alternate; }
-.class-list a:hover label{ -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
-  animation: neon2 1.5s ease-in-out infinite alternate; }  
-  
 .page-btn{ font-size:20px; top:0; right:60px;}
 .page-btn a{ color:#fff;}
 
-/*详情*/
-.stage-detail .logo{ margin:20px 0; background:url(../images/slogo.png) center / 269px 94px no-repeat; width:269px; height:94px;}
-.classdetail-center .carousel {
-    margin: 0 auto;
-}
-.classdetail-center .item label{ width:100%; position:absolute; top:0; left:0; text-align:center; color:#fff; font-size:40px; font-weight:bold;}
-
-.classdetail-center .item .txt {
-    width:100%;
-    text-align:center;
-    display:table;
-    height:500px;
-    color:#fff;
-    font-size:20px;
-    padding:20px 20px 20px;
-    overflow:hidden;}
-.classdetail-center .item .txt .txt-center{ display:table-cell; vertical-align:middle;}
-
-
 /*index-c*/
-.body-bg03{background:url(../images/jd-bg03.jpg) top center no-repeat #152f44;}
+.body-bg03{background:url(../images/bg.png) center center no-repeat #152f44;}
 .kp .center{width:1080px;}
-.kp .logo{ top:30px; background:url(../images/slogo.png) center / 269px 94px no-repeat;width:269px;height:94px;}
-.htmleaf-container{ margin-top:180px;}
+.kp .logo{ top:30px; background:url(../images/logo.png) center / 302px 155px no-repeat;width:302px;height:155px;}
+.htmleaf-container{ margin-top:250px;}
 
 .vmc-centered{padding: 30px 0;}
 .vmc-centered img {transition: all 0.3s ease;}
