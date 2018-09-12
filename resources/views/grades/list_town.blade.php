@@ -21,7 +21,7 @@
                 <li>
                     <label>{{ $item['title'] }}</label>
                     <a href="{{ route('courses.index', ['grade_id' => $item['id']]) }}">
-                        <img class="reflect" src="{{ $item['image_url'] }}" />
+                        <img class="reflect" src="{{ $item['image_url'] }}" width="180" />
                     </a>
                 </li>
             @endforeach
