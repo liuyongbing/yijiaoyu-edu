@@ -3,7 +3,7 @@
 .vmc-container img[src$=".svg"]{width: 100% !important; height: auto !important; max-height: 100%;}
 .vmc-viewport {
     overflow: hidden;
-    height: 420px;
+    height: 590px;
     padding-top: 50px;
 	/*border: 1px solid #000;*/
 	/*background-color: green;*/

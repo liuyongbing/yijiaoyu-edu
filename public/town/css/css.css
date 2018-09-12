@@ -53,7 +53,7 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
 .body-bg03{background:url(../images/bg.png) center center no-repeat #152f44;}
 .kp .center{width:1080px;}
 .kp .logo{ top:30px; background:url(../images/logo.png) center / 302px 155px no-repeat;width:302px;height:155px;}
-.htmleaf-container{ margin-top:230px;/*background-color:green;*/}
+.htmleaf-container{ margin-top:230px;/*background-color:green;*/overflow: hidden;}
 
 .vmc-centered{padding: 30px 0;}
 .vmc-centered img {transition: all 0.3s ease;}
