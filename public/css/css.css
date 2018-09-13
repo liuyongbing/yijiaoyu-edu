@@ -23,7 +23,7 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
 .head a{ margin:10px 0 0 60px; background:url(../images/logo_100yjy.png) center / 360px 122px no-repeat; width:360px; height:122px; display:block;}
 
 .login-main{ background:#11a5fb; height:698px;}
-.login-main .center{ height:698px; background:url(../images/login_bg_100yjy.jpg) left center  / 1924px 698px no-repeat;}
+.login-main .center{ height:698px; background:url(../images/login_bg.png) left center  / 1924px 698px no-repeat;}
 .login-main .txt{ top:100px; left:440px; color:#fff; font-size:36px; line-height:76px;}
 .login-main .login-div {
     margin-top:100px;
