@@ -51,6 +51,7 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
 /*index-c*/
 .body-bg03{background:url(../images/bg.png) top center no-repeat #ffb4b4;}
 .body-bg04{background:url(../images/bg2.png) center center no-repeat #ffb4b4;}
+.body-bg05{background: #ffb4b4;}
 .kp .center{width:1080px;}
 .htmleaf-container{ margin-top:230px;/*background-color:green;*/}
 .htmleaf-container2{ margin-top:80px;/*background-color:green;*/}
@@ -58,6 +59,43 @@ input::-ms-clear{display:none;}select::-ms-expand { display: none; }
 .vmc-centered{padding: 30px 0;}
 .vmc-centered img {transition: all 0.3s ease;}
 .vmc-centered .vmc_active img {}
+
+.title .title1 {
+    width: 450px;
+    float: left;
+    /*background-color: black;*/
+}
+.title .title2 {
+    width: 350px;
+    float: right;
+    text-align: right;
+    /*background-color: red;*/
+}
+
+.class-btn {
+    width: 119px;
+    height: 47px;
+    background: url("../images/btn.png") top left no-repeat #ffffff;
+    float: left;
+    margin: 23px 34px;
+    text-align: center;
+    font-size: 18px;
+    color: #aa7e49;
+    padding-top: 12px;
+    text-decoration: none;
+}
+.class-btn:hover {
+    width: 119px;
+    height: 47px;
+    background: url("../images/btn2.png") top left no-repeat #ffffff;
+    float: left;
+    margin: 23px 34px;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    padding-top: 12px;
+    text-decoration: none;
+}
 
   
   @-webkit-keyframes neon2 {
