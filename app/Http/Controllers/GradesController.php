@@ -28,7 +28,7 @@ class GradesController extends Controller
         
         $brandId = $request->session()->get('brand_id');
 //$brandId = 3;
-$brandId = 2;
+//$brandId = 2;
         $params = [
             'brand_id' => $brandId,
             'status' => 1

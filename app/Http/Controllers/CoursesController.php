@@ -41,7 +41,7 @@ class CoursesController extends Controller
         $grade = $repository->detail($params['grade_id']);
         
         $brandId = $request->session()->get('brand_id');
-$brandId= 2;
+//$brandId= 2;
         switch ($brandId)
         {
             case Dictionary::$teacherTypes['teacher_pocketcat']:
