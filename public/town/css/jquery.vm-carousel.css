@@ -13,7 +13,7 @@
 .vmcarousel{
 	list-style-type: none; padding: 0; margin: 0; width: 1000%;
 	/*border: 1px solid #000;*/
-	margin-left:150px;
+	/*margin-left:150px;*/
 }
 .vmcarousel:after{content: ''; display: table; clear: both;}
 
@@ -26,7 +26,7 @@
 	/*background-color: green;*/
 }
 .vmcarousel li:hover{
-    transform: scale(1.7);
+    transform: scale(1.5);
     padding-top:30px;
 	/*width: 150px;*/
 }
