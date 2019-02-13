@@ -15,7 +15,7 @@
     </div>
 
     <div class="htmleaf-container">
-        <div class="container">
+        <div class="container" style="width:1325px;padding:0px">
             <ul class="vmcarousel-centered vmc-centered">
             @foreach($items as $item)
                 <li>
